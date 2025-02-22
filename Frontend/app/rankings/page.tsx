@@ -1,4 +1,4 @@
-export default function CodingRankings() {
+export default function Ranking() {
   return (
     <div className="max-w-7xl mx-auto p-6">
       {/* Header Section */}
