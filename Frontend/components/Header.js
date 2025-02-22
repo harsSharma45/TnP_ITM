@@ -22,12 +22,12 @@ const Header = () => {
           </li>
           <li>
             <Link href="/coding-rankings" className="hover:text-gray-300">
-              Coding Rankings
+               Rankings
             </Link>
           </li>
           <li>
-            <Link href="/companies-placed" className="hover:text-gray-300">
-              Companies Placed
+            <Link href="/reviews" className="hover:text-gray-300">
+              Reviews
             </Link>
           </li>
           <li>

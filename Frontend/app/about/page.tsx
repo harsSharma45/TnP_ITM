@@ -27,7 +27,7 @@ export default function About() {
             transition={{ delay: 0.3 }}
             className="text-xl text-gray-300 max-w-3xl"
           >
-            The Training and Placement Cell at BBDITM works dedicatedly towards providing career guidance and placement opportunities to students.
+            The Training and Placement Cell at BBDITM works dedicatedly towards providing career guidance and NO placement opportunities to students.
           </motion.p>
         </div>
       </motion.div>
@@ -61,7 +61,7 @@ export default function About() {
             viewport={{ once: true }}
             className="bg-gray-800/30 rounded-2xl p-8 backdrop-blur-sm"
           >
-            <h2 className="text-3xl font-bold mb-6">Our Mission</h2>
+            <h2 className="text-3xl font-bold mb-6">Our Mission 1.2LPA</h2>
             <p className="text-gray-300 text-lg leading-relaxed">
               We strive to bridge the gap between academia and industry by providing comprehensive training 
               and placement support to our students. Our goal is to ensure that every student gets the 
@@ -74,7 +74,7 @@ export default function About() {
       {/* Top Recruiters */}
       <div className="py-16 px-6 bg-gray-900/50">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold mb-12 text-center">Top Recruiters</h2>
+          <h2 className="text-3xl font-bold mb-12 text-center">Top Recruiters(which never came)</h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
             {topRecruiters.map((company, index) => (
               <motion.div
@@ -105,7 +105,7 @@ export default function About() {
       {/* Process Section */}
       <div className="py-16 px-6">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold mb-12 text-center">Our Process</h2>
+          <h2 className="text-3xl font-bold mb-12 text-center">Our Process(yet no hiring)</h2>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             {processSteps.map((step, index) => (
               <motion.div
@@ -136,16 +136,16 @@ const stats = [
   {
     title: "Placed Students",
     value: "500+",
-    description: "in 2023 batch"
+    description: "till 2023 batch"
   },
   {
     title: "Average Package",
-    value: "12 LPA",
+    value: "1.2 LPA",
     description: "for 2023 batch"
   },
   {
     title: "Partner Companies",
-    value: "100+",
+    value: "69+",
     description: "and growing"
   }
 ];

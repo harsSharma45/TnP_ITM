@@ -15,8 +15,8 @@ export default function Header() {
     { path: '/', label: 'Home' },
     { path: '/about', label: 'About' },
     { path: '/alumni', label: 'Alumni' },
-    { path: '/rankings', label: 'Coding Rankings' },
-    { path: '/placements', label: 'Companies Placed' },
+    { path: '/rankings', label: ' Rankings' },
+    { path: '/reviews', label: 'Feedback' },
     { path: '/resources', label: 'Resources' },
     { path: '/current-hiring', label: 'Current Hiring' },
   ];

@@ -75,7 +75,7 @@ export default function Alumni() {
             animate={{ y: 0, opacity: 1 }}
             className="text-4xl md:text-5xl font-bold mb-6"
           >
-            Our Distinguished Alumni
+            Our Distinguished & Imaginary Alumni
           </motion.h1>
           <motion.p 
             initial={{ y: 20, opacity: 0 }}

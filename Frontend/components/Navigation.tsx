@@ -10,8 +10,8 @@ export default function Navigation() {
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
     { name: "Alumni", path: "/alumni" },
-    { name: "Coding Rankings", path: "/rankings" },
-    { name: "Companies Placed", path: "/placements" },
+    { name: "Rankings", path: "/rankings" },
+    { name: "Feedbacks", path: "/reviews" },
     { name: "Resources", path: "/resources" },
     { name: "Current Hiring", path: "/current-hiring" },
     { name: "Login", path: "/login" }
