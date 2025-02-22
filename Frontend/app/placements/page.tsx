@@ -82,7 +82,7 @@ const yearStats = [
 const topRecruiters = [
   {
     name: "Google",
-    logo: "/companies/google.png",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/375px-Google_2015_logo.svg.png",
     offers: 15,
     packageRange: "25-45 LPA",
     roles: ["SDE", "Product Manager"]
