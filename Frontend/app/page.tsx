@@ -76,7 +76,7 @@ export default function Home() {
                 transition={{ delay: 0.3 }}
                 className="text-2xl md:text-3xl font-light text-[#9D71FD]"
               >
-                Welcome to the On-Campus No Placement
+                Welcome to the Future of Opportunities
               </motion.h2>
               <motion.h1 
                 className="text-6xl md:text-8xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#9D71FD] via-[#7C3AED] to-[#4C1D95]"
@@ -86,7 +86,7 @@ export default function Home() {
               <motion.div 
                 className="text-3xl md:text-4xl font-medium text-[#E5E7EB] tracking-wide"
               >
-                Online Seva Kendra
+                Training & Placement Cell
               </motion.div>
             </motion.div>
 
@@ -96,7 +96,7 @@ export default function Home() {
               transition={{ delay: 0.6 }}
               className="text-xl md:text-2xl text-[#9CA3AF] max-w-3xl mx-auto leading-relaxed"
             >
-              Bridging Dreams with Destiny | blah blah blah...
+              Bridging Dreams with Destiny | Shaping Tomorrow's Tech Leaders
             </motion.p>
 
             {/* Animated Words */}
