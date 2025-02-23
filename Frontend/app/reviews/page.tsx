@@ -34,7 +34,7 @@ export default function ReviewPage() {
     if (!newReview.trim()) return;
 
     // Send to secret message link
-    window.open(`https://www.secretmessage.link/secret/67ba5bd2271a3/?message=${encodeURIComponent(newReview)}`, '_blank');
+    window.open(`https://www.google.com/?message=${encodeURIComponent(newReview)}`, '_blank');
     
     setNewReview('');
     setIsModalOpen(false);
