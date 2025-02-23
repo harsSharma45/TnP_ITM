@@ -11,19 +11,19 @@ export default function ReviewPage() {
   const reviews = [
     {
       id: 1,
-      content: "The places records of BBDNIIT are not great as the companies barely visit the campus and if they visit they hire and company shuts down.",
+      content: "The places records of BBDNIIT are not great as the companies barely visit the campus.",
       date: "2 days ago",
       background: "bg-blue-50"
     },
     {
       id: 2,
-      content: "Could improve the communication about upcoming placement drives. No need to improve everthing or rather shut down the college.",
+      content: "Could improve the communication about upcoming placement drives.",
       date: "1 week ago",
       background: "bg-green-50"
     },
     {
       id: 3,
-      content: "Only thing good about the college is the dental college infront",
+      content: "Decent aktu college",
       date: "2 weeks ago",
       background: "bg-purple-50"
     }
