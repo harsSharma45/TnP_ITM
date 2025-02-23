@@ -4,15 +4,12 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 
 const words = [
-  // "Innovation",
-  // "Excellence",
-  // "Leadership",
-  // "Technology",
-  // "Success"
-  "reality",
-  "depression",
-  "misery",
-  "1.2 LPA"
+  "Innovation",
+  "Excellence",
+  "Leadership",
+  "Technology",
+  "Success"
+ 
 ];
 
 export default function Home() {
