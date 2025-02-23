@@ -1,0 +1,62 @@
+name: "CodeQL Advanced"
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  schedule:
+       - cron: '29 1 * * 4'
+
+jobs:
+  analyze:
+    name: Analyze (${{ matrix.language }})
+    
+    # Optimized runner selection: MacOS for Swift, Ubuntu for all others
+    runs-on: ${{ matrix.language == 'swift' && 'macos-latest' || 'ubuntu-latest' }}
+
+    permissions:
+      security-events: write  # Required for CodeQL security alerts
+      packages: read  # Needed for fetching private CodeQL packs
+      actions: read  # Required for private repositories
+      contents: read  # Required for private repositories
+
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - language: javascript-typescript
+            build-mode: none
+
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      # Setup required runtime environments (Node.js, Java, etc.)
+      # Uncomment and modify based on project needs.
+      # - name: Setup Node.js
+      #   uses: actions/setup-node@v4
+      #   with:
+      #     node-version: 18
+
+      - name: Initialize CodeQL
+        uses: github/codeql-action/init@v3
+        with:
+          languages: ${{ matrix.language }}
+          build-mode: ${{ matrix.build-mode }}
+        
+      - if: matrix.build-mode == 'manual'
+        name: Manual Build Setup
+        shell: bash
+        run: |
+          echo "⚠️ Manual build mode detected. Customize this step to build your code."
+          echo "Example:"
+          echo "  make bootstrap"
+          echo "  make release"
+          exit 1  # Exit with error until properly configured
+
+      - name: Perform CodeQL Analysis
+        uses: github/codeql-action/analyze@v3
+        with:
+          category: "/language:${{ matrix.language }}"
