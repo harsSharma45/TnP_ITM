@@ -11,7 +11,6 @@ export default function StudentLogin() {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log("Student login attempt with email:", email);
     router.push("/dashboard");
   };
 

@@ -11,7 +11,6 @@ export default function AdminLogin(): JSX.Element {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log("Admin login:", email, password);
     router.push("/admin/dashboard");
   };
 

@@ -34,7 +34,7 @@ const alumniData = [
     linkedin: "https://linkedin.com/in/amit",
     testimonial: "The mentorship I received at BBDITM was exceptional."
   },
-  // Add more alumni profiles...
+
   {
     name: "Neha Gupta",
     batch: "2023",
@@ -45,7 +45,7 @@ const alumniData = [
     linkedin: "https://linkedin.com/in/neha",
     testimonial: "BBDITM's industry connections helped me land my dream job."
   },
-  // Add more profiles as needed
+  
 ];
 
 const batchYears = ["All", "2023", "2022", "2021", "2020"];
