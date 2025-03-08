@@ -5,50 +5,96 @@ import { useState } from "react";
 
 const alumniData = [
   {
-    name: "Rahul Kumar",
-    batch: "2020",
-    company: "Google",
-    role: "Software Engineer",
-    package: "45 LPA",
-    image: "https://randomuser.me/api/portraits/men/1.jpg",
-    linkedin: "https://linkedin.com/in/rahul",
-    testimonial: "BBDITM provided me with the perfect platform to grow and achieve my dreams."
-  },
-  {
-    name: "Priya Singh",
+    name: "Meghna Verma",
     batch: "2021",
-    company: "Microsoft",
-    role: "Product Manager",
-    package: "42 LPA",
-    image: "https://randomuser.me/api/portraits/women/2.jpg",
-    linkedin: "https://linkedin.com/in/priya",
-    testimonial: "The training and placement cell was instrumental in my success."
+    company: "Google",
+    role: "SDE",
+    package: "",
+    image: "https://shorturl.at/tcEcq",
+    linkedin: "https://www.linkedin.com/in/meghna-varma-381282186/",
+    testimonial: "College Doesn't Matter, What Matters is Your Hard Work."
   },
   {
-    name: "Amit Sharma",
-    batch: "2022",
-    company: "Amazon",
-    role: "SDE II",
+    name: "Riya Singh",
+    batch: "2021",
+    company: "Walmart",
+    role: "Software Developer III",
+    package: "38 LPA",
+    image: "https://shorturl.at/tcEcq",
+    linkedin: "https://www.linkedin.com/in/singh-riya/",
+    testimonial: "College Doesn't Matter, What Matters is Your Hard Work."
+  },
+  {
+    name: "SAYED ALI ABBAS",
+    batch: "2020",
+    company: "Zomato",
+    role: "Key Accounts Management",
+    package: "45 LPA",
+    image: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
+    linkedin: "https://www.linkedin.com/in/the-saaz/",
+    testimonial: "College Doesn't Matter, What Matters is Your Hard Work."
+  },
+  
+  {
+    name: "Dhirendra Pratap Singh",
+    batch: "2020",
+    company: "Citi",
+    role: "Backend Developer",
     package: "40 LPA",
-    image: "https://randomuser.me/api/portraits/men/3.jpg",
-    linkedin: "https://linkedin.com/in/amit",
-    testimonial: "The mentorship I received at BBDITM was exceptional."
+    image: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
+    linkedin: "https://www.linkedin.com/in/hanisntsolo/",
+    testimonial: "College Doesn't Matter, What Matters is Your Hard Work."
   },
 
   {
-    name: "Neha Gupta",
-    batch: "2023",
-    company: "Meta",
-    role: "Software Developer",
+    name: "Nivedita Singh",
+    batch: "2021",
+    company: "S&P Global",
+    role: "Software Engineer",
     package: "38 LPA",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-    linkedin: "https://linkedin.com/in/neha",
-    testimonial: "BBDITM's industry connections helped me land my dream job."
+    image: "https://shorturl.at/tcEcq",
+    linkedin: "https://www.linkedin.com/in/nivedita-singh-28366017a/",
+    testimonial: "College Doesn't Matter, What Matters is Your Hard Work."
   },
+  {
+    name: "Akshat Srivastava ",
+    batch: "older",
+    company: "Google",
+    role: "Engineering Manager",
+    package: "38 LPA",
+    image: "https://shorturl.at/tcEcq",
+    linkedin: "https://www.linkedin.com/in/sriakshat/",
+    testimonial: "College Doesn't Matter, What Matters is Your Hard Work."
+  },
+  {
+    name: "Anushree Singhal ",
+    batch: "older",
+    company: "Google",
+    role: "Lead Manager",
+    package: "38 LPA",
+    image: "https://shorturl.at/tcEcq",
+    linkedin: "https://www.linkedin.com/in/anushree-singhal-9437545b/",
+    testimonial: "I recommend strategies and build solutions."
+  },
+  {
+    name: "Akshat Srivastava ",
+    batch: "older",
+    company: "Google",
+    role: "Engineering Manager",
+    package: "38 LPA",
+    image: "https://shorturl.at/tcEcq",
+    linkedin: "https://www.linkedin.com/in/sriakshat/",
+    testimonial: "College Doesn't Matter, What Matters is Your Hard Work."
+  },
+
+  
+
+  
+  
   
 ];
 
-const batchYears = ["All", "2023", "2022", "2021", "2020"];
+const batchYears = ["All", "2022", "2021", "2020","2019","older"];
 const companies = ["All", "Google", "Microsoft", "Amazon", "Meta"];
 
 export default function Alumni() {
@@ -154,7 +200,7 @@ export default function Alumni() {
                     />
                     <div>
                       <h3 className="text-xl font-semibold">{alumni.name}</h3>
-                      <p className="text-gray-400">Batch of {alumni.batch}</p>
+                      {alumni.batch === "older" ? <p className="text-gray-400">Alumni</p> : <p className="text-gray-400">Batch of {alumni.batch}</p>}
                     </div>
                   </div>
                   <div className="space-y-2">
@@ -165,10 +211,6 @@ export default function Alumni() {
                     <div className="flex items-center gap-2">
                       <span className="text-gray-400">Role:</span>
                       <span className="font-medium">{alumni.role}</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <span className="text-gray-400">Package:</span>
-                      <span className="font-medium text-green-400">{alumni.package}</span>
                     </div>
                   </div>
                   <p className="mt-4 text-gray-300 italic">"{alumni.testimonial}"</p>

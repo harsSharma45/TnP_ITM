@@ -22,7 +22,7 @@ export default function StudentLogin() {
         transition={{ duration: 0.8, ease: "easeOut" }}
         className="relative w-full max-w-md p-8 backdrop-blur-lg bg-white/10 border border-white/20 shadow-xl rounded-2xl"
       >
-        <h1 className="text-3xl font-bold text-white text-center mb-6">Student Login</h1>
+        <h1 className="text-3xl font-bold text-white text-center mb-6">Signup</h1>
         <form onSubmit={handleSubmit} className="space-y-5">
           <div>
             <label htmlFor="email" className="block text-white mb-1">
